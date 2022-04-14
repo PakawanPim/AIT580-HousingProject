@@ -9,7 +9,7 @@ headers={'Authorization': Key}
 result = requests.get(query,headers=headers)
 result_dict = result.json()
 
-with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\Economic_indicator.json','w') as fout:
+with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\Economic_indicator.json','w') as fout:
     json.dump(result_dict, fout,indent=2)
 fout.close()
 #
@@ -30,7 +30,7 @@ for i in range(len(result_dict)):
             # print (str(index)+' '+Name+' '+Date+' '+quarter)
             LineToSave.append(str(index)+','+Name+','+Date+','+quarter+','+str(value)+','+str(forecast))
 # print (LineToSave)
-with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\Economic_indicator.csv','w') as fout:
+with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\Economic_indicator.csv','w') as fout:
     fout.write("index, Indicator name, Effective Date, Quarter, Value, Forecast\n")
     for line in LineToSave:
         fout.write(line+"\n")
@@ -42,7 +42,7 @@ fout.close()
 # result = requests.get(query,headers=headers)
 # result_dict = result.json()
 #
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\Housing_indicator.json','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\Housing_indicator.json','w') as fout:
 #     json.dump(result_dict, fout,indent=2)
 # fout.close()
 #
@@ -63,7 +63,7 @@ fout.close()
 #             # print (str(index)+' '+Name+' '+Date+' '+quarter)
 #             LineToSave.append(str(index)+','+Name+','+Date+','+quarter+','+str(value)+','+str(forecast))
 # # print (LineToSave)
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\Housing_indicator.csv','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\Housing_indicator.csv','w') as fout:
 #     fout.write("index, Indicator name, Effective Date, Quarter, Value, Forecast\n")
 #     for line in LineToSave:
 #         fout.write(line+"\n")
@@ -76,7 +76,7 @@ fout.close()
 # result = requests.get(query,headers=headers)
 # result_dict = result.json()
 #
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\HPSI_1.json','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\HPSI_1.json','w') as fout:
 #     json.dump(result_dict, fout,indent=2)
 # fout.close()
 #
@@ -86,7 +86,7 @@ fout.close()
 #     Value = each['hpsiValue']
 #     LineToSave.append(str(i)+','+'18-34 years old'+','+Date+','+str(Value))
 # # print (LineToSave)
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\HPSI_1.csv','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\HPSI_1.csv','w') as fout:
 #     fout.write("index, Age group, Date, hpsiValue\n")
 #     for line in LineToSave:
 #         fout.write(line+"\n")
@@ -98,7 +98,7 @@ fout.close()
 # result = requests.get(query,headers=headers)
 # result_dict = result.json()
 #
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\HPSI_2.json','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\HPSI_2.json','w') as fout:
 #     json.dump(result_dict, fout,indent=2)
 # fout.close()
 #
@@ -108,7 +108,7 @@ fout.close()
 #     Value = each['hpsiValue']
 #     LineToSave.append(str(i)+','+'35-44 years old'+','+Date+','+str(Value))
 # # print (LineToSave)
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\HPSI_2.csv','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\HPSI_2.csv','w') as fout:
 #     fout.write("index, Age group, Date, hpsiValue\n")
 #     for line in LineToSave:
 #         fout.write(line+"\n")
@@ -121,7 +121,7 @@ fout.close()
 # result = requests.get(query,headers=headers)
 # result_dict = result.json()
 #
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\HPSI_3.json','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\HPSI_3.json','w') as fout:
 #     json.dump(result_dict, fout,indent=2)
 # fout.close()
 #
@@ -131,7 +131,7 @@ fout.close()
 #     Value = each['hpsiValue']
 #     LineToSave.append(str(i)+','+'45-64 years old'+','+Date+','+str(Value))
 # # print (LineToSave)
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\HPSI_3.csv','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\HPSI_3.csv','w') as fout:
 #     fout.write("index, Age group, Date, hpsiValue\n")
 #     for line in LineToSave:
 #         fout.write(line+"\n")
@@ -143,7 +143,7 @@ fout.close()
 # result = requests.get(query,headers=headers)
 # result_dict = result.json()
 #
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\HPSI_4.json','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\HPSI_4.json','w') as fout:
 #     json.dump(result_dict, fout,indent=2)
 # fout.close()
 #
@@ -153,7 +153,7 @@ fout.close()
 #     Value = each['hpsiValue']
 #     LineToSave.append(str(i)+','+'65+ years old'+','+Date+','+str(Value))
 # # print (LineToSave)
-# with open('C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\HPSI_4.csv','w') as fout:
+# with open('C:\Users\USER\Desktop\DEAN\AIT580\Project\HPSI_4.csv','w') as fout:
 #     fout.write("index, Age group, Date, hpsiValue\n")
 #     for line in LineToSave:
 #         fout.write(line+"\n")
