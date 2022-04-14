@@ -31,7 +31,7 @@ for state in States:
                 Update = case['last-updated']
                 LineToSave.append(str(index)+','+County+','+State+','+Fipscode+','+Update+','+str(Confirm)+','+str(Deaths))
         # print (LineToSave)
-    folderCSV = 'C:\Users\USER\Desktop\Data Ana Master\AIT580\Project\Covid_'+state+'.csv'
+    folderCSV = 'C:\Users\USER\Desktop\DEAN\AIT580\Project\Covid_'+state+'.csv'
     with open(folderCSV,'w') as fout:
         fout.write("index, County, State, Fips Code, Last updated, Confirm Case, Deaths\n")
         for line in LineToSave:
